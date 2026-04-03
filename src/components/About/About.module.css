@@ -1,0 +1,71 @@
+.about {
+  background: #000;
+  color: #dba46d;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.about h2 {
+  word-spacing: 7px;
+  font-size: 2.2rem;
+  color: #dba46d;
+  margin-bottom: 20px;
+}
+/* h2 .first {
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+h2 .second {
+  color: #ba1008;
+  letter-spacing: 2px;
+} */
+.about p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #ffffff;
+}
+
+.card h3 {
+  color: #dba46d;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .about h2 {
+    font-size: 1.7rem;
+  }
+}

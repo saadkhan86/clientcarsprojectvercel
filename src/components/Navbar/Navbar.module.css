@@ -1,0 +1,98 @@
+.nav {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  background: #212c2f;
+  color: white;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  letter-spacing: 2px;
+  color: white;
+}
+
+.logo2 {
+  color: #ba1008;
+}
+
+/* LINKS */
+.links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 1.2rem;
+}
+
+.links li {
+  list-style: none;
+}
+
+/* NAVLINK */
+.linkTag {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.linkTag:hover {
+  color: #eb6f68;
+}
+
+/* ACTIVE LINK */
+.activeLink {
+  text-decoration: none;
+  color: #ba1008;
+  font-weight: 600;
+}
+
+
+
+/* BURGER */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav {
+    padding: 10px 15px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .links {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: rgba(33, 44, 47, 0.5);
+    width: 150px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+  }
+
+  .showMenu {
+    transform: translateX(0);
+  }
+}
