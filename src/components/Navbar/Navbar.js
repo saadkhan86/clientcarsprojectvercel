@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <h2 className={styles.logo}>
-        AutoPart<span className={styles.logo2}>Hub</span>
+        SrfAuto<span className={styles.logo2}>Parts</span>
       </h2>
 
       <div className={styles.burger} onClick={() => setMenuOpen(!menuOpen)}>

@@ -31,14 +31,15 @@ export default function Products() {
     fetchProducts()
   }, [search])
 
-  if (loading) return <h2 className={styles.loading}>Loading...</h2>
+  if (loading)
+    return (
+      <div className={styles.loadingContainer}>
+        <h2 className={styles.loading}>Loading...</h2>
+      </div>
+    )
 
   return (
     <section className={styles.products}>
-      <h1>
-        <span>Car</span> Products
-      </h1>
-
       <div className={styles.grid}>
         {products.map((product) => (
           <div

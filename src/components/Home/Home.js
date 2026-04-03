@@ -33,7 +33,7 @@ export default function Home() {
       const timer = setTimeout(() => {
         setTransition(false)
         setCurrent(1)
-      }, 1000)
+      }, 1500)
       return () => clearTimeout(timer)
     }
 

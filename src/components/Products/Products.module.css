@@ -11,9 +11,15 @@
   font-size: 2rem;
   margin-bottom: 30px;
 }
-/* h1 span {
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  height: 60vh;
+  width: 100vw;
   color: #ffffff;
-} */
+}
 /* GRID */
 .grid {
   display: grid;
@@ -52,7 +58,7 @@
   font-size: 14px;
   color: #ccc;
 }
-.card .productBrand{
+.card .productBrand {
   font-weight: 700;
 }
 .price {
@@ -87,5 +93,8 @@
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .loading {
+    font-size: 2rem;
   }
 }
